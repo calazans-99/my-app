@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-poppins bg-[#0e0e0e] text-white;
+    }
+}
+
+@layer components {
+
+    .cabecalho {
+        @apply flex justify-between items-center p-4;
+    }
+
+    .logo-container {
+        @apply flex items-center justify-center pr-32;
+    }
+
+    .cabecalho-logo {
+        @apply w-[90px] h-[90px] border-0; 
+    }
+
+    header h3 {
+        @apply text-xl leading-tight;
+    }
+
+    .home-button {
+        @apply p-10 text-white bg-none border-none text-sm font-bold cursor-pointer;
+    }
+
+    .home-text {
+        @apply flex flex-row justify-between;
+    }
+
+    .home-text h1 {
+        @apply text-[11vw] pl-16;
+    }
+
+    .img-home {
+        @apply ml-[20%] border-0;
+    }
+
+    .home-page p {
+        @apply text-[0.8em] max-w-[40%] p-12 pr-20;
+    }
+
+    .menu {
+        @apply flex flex-row gap-4 p-16 justify-evenly font-bold list-none text-white;
+    }
+
+    .menu li:hover {
+        @apply text-[#f63562];
+    }
+
+    .rodape {
+        @apply flex flex-row mt-8 p-[60px];
+    }
+
+    .rodape h2 {
+        @apply mr-[4.5em] text-[4.2em] font-bold text-[#f63562];
+    }
+
+    .rodape-image {
+        @apply pl-[100px] border-0; 
+    }
+
+    .info {
+        @apply flex justify-evenly gap-10 pr-10 mr-2.5;
+    }
+
+    .info button {
+        @apply p-2;
+    }
+
+    .info button:hover {
+        @apply text-[#f63562];
+    }
+
+    .head-aluno {
+        @apply flex flex-row items-center p-10 gap-10;
+    }
+
+    .head-aluno h1 {
+        @apply text-[7vw] font-bold text-white uppercase leading-none tracking-tight;
+    }
+
+    .foto-aluno {
+        @apply h-[250px] w-[250px] rounded-full shadow-lg;
+    }
+
+    .descricao-aluno {
+        @apply flex flex-col gap-4 text-right text-[1em] max-w-[30%] pr-10;
+    }
+
+    .descricao-aluno p {
+        @apply text-gray-300;
+    }
+
+    .descricao-aluno p:last-child {
+        @apply font-bold text-[#f63562];
+    }
+
+    .skills-container {
+        @apply flex gap-10 p-10;
+    }
+
+    .skills {
+        @apply flex flex-col md:flex-row gap-10 w-[60%];
+    }
+
+    .skill {
+        @apply flex flex-col gap-4 bg-gray-900 p-6 rounded-lg shadow-md w-full md:w-[45%];
+    }
+
+    .skill h2 {
+        @apply text-lg font-bold text-[#f63562] mb-4; 
+    }
+
+    .skill ul {
+        @apply list-disc list-inside text-white;
+    }
+
+    .skill li {
+        @apply text-sm mb-2; 
+    }
+
+    .avaliacoes {
+        @apply flex flex-col ml-10 mt-10;
+    }
+
+    .avaliacoes h2 {
+        @apply text-3xl font-bold text-white uppercase border-t border-gray-400 pt-12 mt-20 mb-10;
+    }
+
+    .avaliacao {
+        @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 p-10 pb-20 bg-gray-900 rounded-lg shadow-lg;
+    }
+
+    .avaliacao h3 {
+        @apply flex justify-center items-center p-4 w-full text-xl font-bold text-[#f63562] uppercase text-center mb-4;
+    }
+
+    .avaliacao div {
+        @apply bg-gray-800 p-4 rounded-md shadow-md;
+    }
+
+    .avaliacao p {
+        @apply text-sm text-gray-300 mb-2;
+    }
+
+    .exibir-aluno {
+        @apply flex flex-col justify-center;
+    }
+
+    .botao-editar, .botao-nova-materia {
+        @apply border border-white px-4 py-2 rounded ml-10 w-[10%] mt-4 transition-colors duration-300 ease-in-out;
+    }
+
+    .botao-editar:hover {
+        @apply bg-[#f63562] text-white;
+    }
+
+    .botao-nova-materia:hover {
+        @apply bg-[#32a852] text-white;
+    }
+
+    .editar-aluno, .adicionar-materia {
+        @apply bg-gray-800 p-8 rounded-lg shadow-lg mt-10 w-[80%] mx-auto;
+    }
+
+    .editar-aluno h1, .adicionar-materia h1 {
+        @apply text-3xl font-bold mb-6;
+    }
+
+    .editar-aluno form table, .adicionar-materia form table {
+        @apply w-full;
+    }
+
+    .editar-aluno form td, .adicionar-materia form td {
+        @apply p-4;
+    }
+
+    .editar-aluno input[type="text"],
+    .editar-aluno textarea,
+    .adicionar-materia input[type="text"] {
+        @apply w-full p-2 border border-gray-300 rounded-md text-black;
+    }
+
+    .editar-aluno button[type="submit"] {
+        @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4;
+    }
+
+    .adicionar-materia button[type="submit"] {
+        @apply bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4;
+    }
+
+    .descricao-aluno {
+        @apply flex flex-col gap-4 text-right text-[1em] max-w-[30%] pr-10 relative;
+    }
+    
+    .rm-aluno {
+        @apply font-bold text-[#f63562];
+    }
+    
+    .grafico-container {
+        @apply w-[40%] flex justify-center items-center;
+        width: 300px;
+        height: 300px;
+    }
+}
